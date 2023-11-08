@@ -12,8 +12,8 @@ This calorie calculator computes how many calories are required daily to maintai
 
 ## Installation
 
-1. [Download the ZIP](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) file of this repository.
-2. Upload the /ci_calorie_calculator-master/ folder to the /wp-content/plugins/ directory.
+1. [Download](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
+2. Upload the /calorie-calculator-master/ folder to the /wp-content/plugins/ directory.
 3. Activate the [Calorie Calculator](https://www.calculator.io/calorie-calculator/ "Calorie Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
 ## Usage
