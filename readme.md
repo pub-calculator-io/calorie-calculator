@@ -2,19 +2,13 @@
 
 This calorie calculator computes how many calories are required daily to maintain, decrease, or gain weight. Learn about the different types of calories and how they affect you.
 
-### Shortcode
+### Screenshots
 
-Use the Calorie Calculator WordPress shortcode:
+#### The Calorie Calculator Input Form
+![Calorie Calculator Input Form](/assets/images/screenshot-1.png "Calorie Calculator Input Form")
 
-`[ci_calorie_calculator]`
-
-Libraries in use:
-1. https://mathjs.org/
-2. https://katex.org/
-3. https://github.com/aFarkas/lazysizes
-4. https://github.com/RobinHerbots/Inputmask
-5. https://air-datepicker.com/
-6. https://www.chartjs.org/
+#### The Calorie Calculator Calculation Results
+![Calorie Calculator Calculation Results](/assets/images/screenshot-2.png "Calorie Calculator Calculation Results")
 
 ## Installation
 
@@ -26,10 +20,10 @@ Libraries in use:
 * If you are using widgets, just add the Calorie Calculator to the sidebar through the `Appearance -> Widgets -> Calorie Calculator` menu in WordPress.
 * Add the following code: `<?php display_ci_calorie_calculator(); ?>` to your template where you would like the Calorie Calculator to appear.
 
-## Screenshots
-
-### The Calorie Calculator Input Form
-![Calorie Calculator Input Form](/assets/images/screenshot-1.png "Calorie Calculator Input Form")
-
-### The Calorie Calculator Calculation Results
-![Calorie Calculator Calculation Results](/assets/images/screenshot-2.png "Calorie Calculator Calculation Results")
+## Libraries in Use
+1. https://mathjs.org/
+2. https://katex.org/
+3. https://github.com/aFarkas/lazysizes
+4. https://github.com/RobinHerbots/Inputmask
+5. https://air-datepicker.com/
+6. https://www.chartjs.org/
