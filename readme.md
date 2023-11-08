@@ -38,8 +38,11 @@ Libraries in use:
 * Add the following code: `<?php display_ci_calorie_calculator(); ?>` to your template where you would like the Calorie Calculator to appear.
 
 ## Screenshots
-1. The Calorie Calculator Input Form.
-2. The Calorie Calculator Calculation Results.
+![Calorie Calculator Input Form](/assets/images/screenshot-1.png?raw=true "Calorie Calculator Input Form")
+**The Calorie Calculator Input Form**
+
+![Calorie Calculator Calculation Results](/assets/images/screenshot-1.png?raw=true "Calorie Calculator Calculation Results")
+**The Calorie Calculator Calculation Results**
 
 ## Changelog
 
