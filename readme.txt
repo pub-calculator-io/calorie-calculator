@@ -13,6 +13,8 @@ This calorie calculator computes how many calories are required daily to maintai
 
 This calorie calculator computes how many calories are required daily to maintain, decrease, or gain weight. Learn about the different types of calories and how they affect you.
 
+[Calorie Calculator Homepage](https://www.calculator.io/calorie-calculator/ "Calorie Calculator Homepage")
+
 __Shortcode__
 
 Use the Calorie Calculator shortcode:
