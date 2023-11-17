@@ -1,6 +1,6 @@
 === Calorie Calculator by Calculator.iO ===
 Contributors: calculatorio
-Tags: 
+Tags: calorie calculator, daily calorie intake, calorie counting, weight loss calculator, nutritional needs, calorie goal, diet planning, BMR calculator, maintain weight calculator, calorie deficit calculator
 Requires at least: 5.0
 Tested up to: 6.4.0
 Stable tag: 1.0.0
