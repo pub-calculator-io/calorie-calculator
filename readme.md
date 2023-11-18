@@ -1,4 +1,4 @@
-# Calorie Calculator WordPress Widget by [Calculator.iO](https://www.calculator.io/ "Calculator.iO Homepage")
+# Calorie Calculator Widget for WordPress
 
 This calorie calculator computes how many calories are required daily to maintain, decrease, or gain weight. Learn about the different types of calories and how they affect you.
 
