@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Calorie Calculator by www.calculator.io
+Plugin Name: CI Calorie calculator
 Plugin URI: https://www.calculator.io/calorie-calculator/
 Description: This calorie calculator computes how many calories are required daily to maintain, decrease, or gain weight. Learn about the different types of calories and how they affect you.
 Version: 1.0.0

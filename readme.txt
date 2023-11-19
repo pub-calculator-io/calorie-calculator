@@ -1,4 +1,4 @@
-=== Calorie Calculator by www.calculator.io ===
+=== CI Calorie calculator ===
 Contributors: calculatorio
 Tags: calorie calculator, daily calorie intake, calorie counting, weight loss calculator, nutritional needs, calorie goal, diet planning, BMR calculator, maintain weight calculator, calorie deficit calculator
 Requires at least: 5.0
