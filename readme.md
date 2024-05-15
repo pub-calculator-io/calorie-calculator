@@ -3,7 +3,6 @@
 This calorie calculator computes how many calories are required daily to maintain, decrease, or gain weight. Learn about the different types of calories and how they affect you.
 
 ![Calorie Calculator Input Form](/assets/images/screenshot-1.png "Calorie Calculator Input Form")
-![Calorie Calculator Calculation Results](/assets/images/screenshot-2.png "Calorie Calculator Calculation Results")
 
 ## Installation
 

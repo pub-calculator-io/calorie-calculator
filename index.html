@@ -57,7 +57,7 @@
                 		</label>
                 	</div>
                 	<div class="input-wrapper row">
-                		<label class="input col   ">
+                		<label class="input col bmr-calculator,ideal-weight-calculator,tdee-calculator,macro-calculator,calories-burned-calculator,protein-calculator  ">
                 			<p class="input__title">Age</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="age" value="30"  />
@@ -94,7 +94,7 @@
                 		</label>
                 	</div>
                 	<div class="input-wrapper row">
-                		<label class="input col ">
+                		<label class="input col bmr-calculator,ideal-weight-calculator,tdee-calculator,macro-calculator,calories-burned-calculator,protein-calculator">
                 			<p class="input__title">Activity</p>
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
@@ -128,7 +128,7 @@
                 
                 <div class="calculator-content col tab" data-tab="1">
                 	<div class="input-wrapper row">
-                		<label class="input col   ">
+                		<label class="input col bmr-calculator,ideal-weight-calculator,tdee-calculator,macro-calculator,calories-burned-calculator,protein-calculator  ">
                 			<p class="input__title">Joules</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="joules" value="9000"  />
@@ -139,7 +139,7 @@
                 		</label>	</div>
                 
                 	<div class="input-wrapper row">
-                		<label class="input col   ">
+                		<label class="input col bmr-calculator,ideal-weight-calculator,tdee-calculator,macro-calculator,calories-burned-calculator,protein-calculator  ">
                 			<p class="input__title">Calories</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="calories" value="2000"  />
@@ -196,7 +196,7 @@
                 <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row tab tab--active" data-tab="0">
                 
                 
-                		<button class="system-switcher" onclick="toggleSystem(this)">
+                		<button class="system-switcher" onclick="toggleSystem(this)" aria-label="Switch System">
                 			<div class="system-switcher__circle"></div>
                 			<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 	<path d="M10.5 9.5H10C9.44772 9.5 9 9.05228 9 8.5V2.5M4.5 2.5H3.5C2.94772 2.5 2.5 2.94772 2.5 3.5L2.5 9.5M7.5 4.5L10.5 4.5M1.5 5.5L4.5 5.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
@@ -217,20 +217,24 @@
                 		</script>
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
                 <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row tab " data-tab="1">
                 
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="convert(this)">Convert</button>
+                	<button class="button button--primary ml-auto" onclick="convert(this); animateElements();" data-action="convert" id="action-button">Convert</button>
                 </div>
+                
+                
                 
                 
                 
@@ -249,8 +253,7 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col tab tab--active" data-tab="0">
 	<div class="result-table__wrapper">
 		<table class="result-table">
@@ -266,44 +269,44 @@
 				<tr class="result-table__row">
 					<td class="result-table__cell"><p class="tag tag--red">Extreme Weight Loss</p></td>
 					<td class="result-table__cell" id="change-0">-2 lb/week</td>
-					<td class="result-table__cell" id="cal-0">1,626 cal/day</td>
-					<td class="result-table__cell" id="percent-0">62%</td>
+					<td class="result-table__cell animate" id="cal-0">1,626 cal/day</td>
+					<td class="result-table__cell animate" id="percent-0">62%</td>
 				</tr>
 				<tr class="result-table__row">
 					<td class="result-table__cell"><p class="tag tag--yellow">Weight loss</p></td>
 					<td class="result-table__cell" id="change-1">-1 lb/week</td>
-					<td class="result-table__cell" id="cal-1">2,126 cal/day</td>
-					<td class="result-table__cell" id="percent-1">81%</td>
+					<td class="result-table__cell animate" id="cal-1">2,126 cal/day</td>
+					<td class="result-table__cell animate" id="percent-1">81%</td>
 				</tr>
 				<tr class="result-table__row">
 					<td class="result-table__cell"><p class="tag tag--green">Mild weight loss</p></td>
 					<td class="result-table__cell" id="change-2">-0.5 lb/week</td>
-					<td class="result-table__cell" id="cal-2">2,376 cal/day</td>
-					<td class="result-table__cell" id="percent-2">90%</td>
+					<td class="result-table__cell animate" id="cal-2">2,376 cal/day</td>
+					<td class="result-table__cell animate" id="percent-2">90%</td>
 				</tr>
 				<tr class="result-table__row">
 					<td class="result-table__cell"><p class="tag">Maintain weight</p></td>
 					<td class="result-table__cell" id="change-3">0 lb/week</td>
-					<td class="result-table__cell" id="cal-3">2,626 cal/day</td>
-					<td class="result-table__cell" id="percent-3">100%</td>
+					<td class="result-table__cell animate" id="cal-3">2,626 cal/day</td>
+					<td class="result-table__cell animate" id="percent-3">100%</td>
 				</tr>
 				<tr class="result-table__row">
 					<td class="result-table__cell"><p class="tag tag--green">Mild weight gain</p></td>
 					<td class="result-table__cell" id="change-4">+0.5 lb/week</td>
-					<td class="result-table__cell" id="cal-4">2,876 cal/day</td>
-					<td class="result-table__cell" id="percent-4">110%</td>
+					<td class="result-table__cell animate" id="cal-4">2,876 cal/day</td>
+					<td class="result-table__cell animate" id="percent-4">110%</td>
 				</tr>
 				<tr class="result-table__row">
 					<td class="result-table__cell"><p class="tag tag--yellow">Weight gain</p></td>
 					<td class="result-table__cell" id="change-5">+1 lb/week</td>
-					<td class="result-table__cell" id="cal-5">3,126 cal/day</td>
-					<td class="result-table__cell" id="percent-5">119%</td>
+					<td class="result-table__cell animate" id="cal-5">3,126 cal/day</td>
+					<td class="result-table__cell animate" id="percent-5">119%</td>
 				</tr>
 				<tr class="result-table__row">
 					<td class="result-table__cell"><p class="tag tag--red">Extreme Weight gain</p></td>
 					<td class="result-table__cell" id="change-6">+2 lb/week</td>
-					<td class="result-table__cell" id="cal-6">3,626 cal/day</td>
-					<td class="result-table__cell" id="percent-6">138%</td>
+					<td class="result-table__cell animate" id="cal-6">3,626 cal/day</td>
+					<td class="result-table__cell animate" id="percent-6">138%</td>
 				</tr>
 			</tbody>
 		</table>
@@ -314,8 +317,8 @@
 	<p class="table-cell table-cell--dark table-cell--only-title">Result</p>
 	<div class="table-cell table-cell--only row">
 		<div class="col result-age__text">
-			<p class="result-text" id="result-joules">9000 J = 2151.05 cal</p>
-			<p class="result-text" id="result-calories">2000 cal = 8368 J</p>
+			<p class="result-text animate" id="result-joules">9000 J = 2151.05 cal</p>
+			<p class="result-text animate" id="result-calories">2000 cal = 8368 J</p>
 		</div>
 	</div>
 </div>

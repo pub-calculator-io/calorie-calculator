@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Calorie Calcula
 == Screenshots ==
 
 1. The Calorie Calculator Input Form.
-2. The Calorie Calculator Calculation Results.
 
 == Installation ==
 
